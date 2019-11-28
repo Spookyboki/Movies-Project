@@ -1,0 +1,80 @@
+.slider-box {
+
+  padding: 80px 0;
+
+  .movie-tape {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 120px;
+
+    @include breakpoint (tablet) {
+      padding: 0px 40px;
+    }
+
+    @include breakpoint (phone) {
+      padding: 0;
+    }
+  }
+
+  .slider {
+    border-left: 20px solid $black;
+    border-right: 20px solid $black;    
+    }
+
+    .bar {
+      height: 50px;
+      background-color: $black;
+      overflow: hidden;
+
+      li {
+        background-color: $white;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 40px;
+        margin-top: 10px;            
+      }
+
+      @include breakpoint (phone) {
+        height: 20px;
+        flex-wrap: nowrap;
+
+        li {
+          height: 15px;
+          width: 15px;
+          margin-top: 2px;
+          margin-left: 14px;
+          border-radius: 3px;
+        }
+      }
+    }
+    
+    .slide {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 700px;
+      background-position: center;
+      float: left;
+      overflow: hidden;
+      overflow-inline: hidden;
+    }
+
+    button {
+      display: none !important;
+    }
+
+    @include breakpoint (tablet) {
+      .slide {
+        height: 600px;
+      }
+    }
+
+    @include breakpoint (phone) {
+      padding: 30px 0;
+
+      .slide {
+        height: 280px;
+    }
+  }
+}
