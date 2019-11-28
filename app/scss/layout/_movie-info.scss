@@ -1,0 +1,107 @@
+.movie-info {
+  background-color: $light-grey;
+
+  .info-content {
+    color: $black;
+    padding: 100px 0px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0px -5px 9px $black;
+
+    @include breakpoint (tablet) {
+      padding: 0 40px;
+    }
+
+    @include breakpoint (phone) {
+      padding: 40px 20px 0 20px;
+    }
+  }
+
+  .movie-poster {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-right: 1px solid $grey;
+
+    @include breakpoint (tablet) {
+      border-right: none;
+      background-position: center;
+      margin: 40px 0;
+    }
+
+    @include breakpoint (phone) {
+      border-right: none;
+    }
+  }
+
+  h2 {
+    font-size: 45px;
+    padding-bottom: 20px;
+
+    @include breakpoint (phone) {
+      font-size: 30px;
+    }
+  }
+
+  .text {
+    width: 400px;
+    margin-right: 30px;
+
+    @include breakpoint (tablet) {
+      width: 100%;
+      margin-right: 0px;
+    }
+
+    @include breakpoint (phone) {
+      width: 100%;
+      margin-right: 0px;
+
+      &:nth-child(2) {
+        border-top: 1px solid $grey;
+        margin-top: -60px;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .bolded {
+    font-weight: bold;
+  }
+
+  p,
+  li {
+    font-size: 22px;
+    line-height: 2.2;
+
+    @include breakpoint (phone) {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+
+  p {
+    width: 80%;
+
+    @include breakpoint (tablet) {
+      width: 90%;
+      margin-right: 0px;
+    }
+
+    @include breakpoint (phone) {
+      width: 100%;
+    }
+  }
+
+  .text-box {
+    padding-bottom: 40px;
+  }
+
+  @include breakpoint (tablet) {
+    padding-bottom: 50px;
+  }
+
+  @include breakpoint (phone) {
+    padding-bottom: 50px;
+  }
+}

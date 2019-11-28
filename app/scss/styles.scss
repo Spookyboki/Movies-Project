@@ -1,0 +1,33 @@
+//Utilities
+// --------
+@import './utilities/reset';
+@import './utilities/colors';
+@import './utilities/mixins';
+@import './utilities/iconfont-template';
+
+//Base
+// --------
+@import './base/base';
+@import './base/grid';
+
+//Objects
+// --------
+@import './objects/text';
+@import './objects/links';
+@import './objects/icons';
+@import './objects/slick.scss';
+@import './objects/separator';
+
+//Layout
+// --------
+@import './layout/header';
+@import './layout/hero';
+@import './layout/footer';
+@import './layout/container';
+@import './layout/slider';
+@import './layout/navigation';
+@import './layout/rating-title';
+@import './layout/row';
+@import './layout/movie-info';
+@import './layout/recommend';
+

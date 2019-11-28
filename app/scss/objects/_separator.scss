@@ -1,0 +1,8 @@
+.separator {
+    height: 100px;
+    background-color: $black;
+
+    @include breakpoint (phone) {
+        height: 45px;
+    }
+}
